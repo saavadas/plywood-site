@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="present.css" />
+    <title>Present</title>
+  </head>
+  <body>
+    <div class="user-chooses">
+      <div class="select-line">
+        <!--Select выбор фанеры-->
+        <!--Тип фанеры-->
+        <div class="plywood-type-div">
+          <label for="plywood-type select-line-label">Тип фанеры</label>
+          <select
+            class="js-plywood-type select-line-select"
+            name="plywood-type"
+            id="plywood-type"
+            autocomplete="off"
+          >
+            <option value="" selected disabled></option>
+            <option value="birch">Берёзовая</option>
+            <option value="pine">Сосновая</option>
+            <option value="larch">Лиственница</option>
+          </select>
+        </div>
+        <!--Толщина фанеры-->
+        <div class="plywood-thickness-div">
+          <label for="plywood-thickness select-line-label"
+            >Толщина фанеры</label
+          >
+          <select
+            class="js-plywood-thickness select-line-select"
+            name="plywood-thickness"
+            id="plywood-thickness"
+          >
+            <option value="" disabled selected></option>
+          </select>
+        </div>
+        <!--Сорт фанеры-->
+        <div class="plywood-sort-div">
+          <label for="plywood-sort select-line-label">Сорт фанеры</label>
+          <select
+            class="js-plywood-sort select-line-select"
+            name="plywood-sort"
+            id="plywood-sort"
+          >
+            <option value="" disabled selected></option>
+          </select>
+        </div>
+      </div>
+      <div class="text-line">
+        <!--Input выборы фанеры-->
+        <div class="plywood-length-div">
+          <label for="plywood-length">Длина фанеры:</label>
+          <input
+            type="number"
+            id="plywood-length"
+            name="plywood-length"
+            class="js-plywood-length text-line-input"
+            placeholder="100-1000мм"
+            min="100"
+            max="1000"
+          />
+        </div>
+        <div class="plywood-width-div">
+          <label for="plywood-width">Ширина фанеры:</label>
+          <input
+            type="number"
+            id="plywood-width"
+            name="plywood-width"
+            class="js-plywood-width text-line-input"
+            placeholder="100-1000мм"
+            min="100"
+            max="1000"
+          />
+        </div>
+        <div class="plywood-amount-div">
+          <label for="plywood-amount">Количество:</label>
+          <input
+            type="number"
+            id="plywood-amount"
+            name="plywood-amount"
+            class="js-plywood-amount text-line-input"
+            placeholder="1-100"
+            min="1"
+            max="100"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="total-output">
+      <div>
+        <table>
+          <tr>
+            <th class="user-input-type">Тип:</th>
+            <th>Толщина:</th>
+            <th>Сорт:</th>
+            <th colspan="2">Размеры:</th>
+          </tr>
+          <tr>
+            <td class="js-user-input-type user-input-type"></td>
+            <td class="js-user-input-thickness"></td>
+            <td class="js-user-input-sort"></td>
+            <td class="js-user-input-length"></td>
+            <td class="js-user-input-width"></td>
+          </tr>
+        </table>
+      </div>
+      <!--Вывод-->
+      <div>
+        <button class="js-calculate-price">Подсчитать цену</button>
+        <table class="user-input-value">
+          <tr>
+            <th>Количество:</th>
+            <th class="total-value">Цена:</th>
+          </tr>
+          <tr>
+            <td class="js-amount"></td>
+            <td class="js-total-value total-value"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="present.js"></script>
+  </body>
+</html>

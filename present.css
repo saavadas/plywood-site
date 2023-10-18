@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.select-line {
+  zoom: 1.3;
+  /* -moz-transform: scale(1.5); */
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 30rem;
+  padding: 1rem;
+  border: 2px solid #333;
+}
+.text-line {
+  zoom: 1.3;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 30rem;
+  padding: 1rem;
+  border: 2px solid #333;
+}
+.text-line-input {
+  width: 6rem;
+}
+.select-line-select {
+  width: 8rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+.text-line-button {
+  height: 15px;
+  width: 100px;
+}
+.user-chooses {
+  position: absolute;
+}
+.total-output {
+  /* max-width: 30rem; */
+  zoom: 1.3;
+  /*не лезь сюда дебил блядь*/
+  position: relative;
+  display: inline-block;
+  /* width: 10000px; */
+  height: 8.2rem;
+  /* top: 100px; */
+  /* margin-left: auto; */
+  /* margin: 0; */
+  left: 60%;
+  width: auto;
+  margin-top: 1rem;
+  border: 2px solid #333;
+  padding: 1rem;
+}
+label {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", Arial;
+  background: #ebebeb;
+}
+
+table,
+td,
+th {
+  /* width: 30%; */
+  font-weight: 400;
+  min-width: 3rem;
+  text-align: center;
+  height: 1.3rem;
+  border: 1px solid #333;
+  margin-bottom: 1rem;
+}
+
+.user-input-type {
+  width: 7rem;
+}
+
+button {
+  height: 2rem;
+  border-radius: 0.2rem;
+  padding: 0.4rem 0.6rem 0.6rem 0.6rem;
+  margin: 1rem;
+  background-color: whitesmoke;
+  color: #333;
+  display: inline-flex;
+}
+.total-value {
+  min-width: 5.4rem;
+}
+.user-input-value {
+  display: inline-flex;
+  height: auto;
+}
+button:hover,
+input:hover,
+select:hover {
+  cursor: pointer;
+}
